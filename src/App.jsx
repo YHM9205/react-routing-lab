@@ -1,12 +1,20 @@
-import './App.css'
+// src/App.jsx
+import { Routes, Route } from 'react-router-dom'
 
-function App() {
+const App = () => {
   return (
-    <main>
-      <h1>Product Management Lab</h1>
-      <p>Build the pages and routes from the lab exercise.</p>
-    </main>
-  )
-}
+    <div>
+      {/* <NavBar /> */}
+      <Routes>
+        <Route path="/" element={<h1>Home Page - Grocery Store Product Management</h1>} />
+        {/* أضف باقي المسارات هنا مثل:
+          <Route path="/products" element={<ProductList />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/products/new" element={<NewProductForm />} />
+        */}
+      </Routes>
+    </div>
+  );
+};
 
-export default App
+export default App;
