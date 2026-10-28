@@ -1,4 +1,3 @@
-// src/components/NavBar.jsx
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -12,7 +11,7 @@ const NavBar = () => {
           <Link to="/products" style={{ textDecoration: 'none', fontWeight: 'bold' }}>Products</Link>
         </li>
         <li>
-          <Link to="/products/new" style={{ textDecoration: 'none', fontWeight: 'bold' }}>Add Product</Link>
+          <Link to="/new-product" style={{ textDecoration: 'none', fontWeight: 'bold' }}>New Products</Link>
         </li>
       </ul>
     </nav>
